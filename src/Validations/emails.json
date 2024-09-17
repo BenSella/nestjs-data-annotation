@@ -1,0 +1,16 @@
+{
+    "validationGroups": [
+        {
+            "group": "Email",
+            "subgroups": [
+                {
+                    "name": "EmailStandard",
+                    "minLength": 5,
+                    "maxLength": 254,
+                    "regexPattern": "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$",
+                    "description": "Standard email format. Example: 'example@example.com'."
+                }
+            ]
+        }
+    ]
+}

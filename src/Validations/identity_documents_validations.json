@@ -1,0 +1,23 @@
+{
+    "validationGroups": [
+        {
+            "group": "IdentityDocuments",
+            "subgroups": [
+                {
+                    "name": "ID",
+                    "minLength": 1,
+                    "maxLength": 9,
+                    "regexPattern": "^\\d{1,9}$",
+                    "description": "ID numbers must be between 1 and 9 digits long. Example: '123456789'."
+                },
+                {
+                    "name": "Passport",
+                    "minLength": 1,
+                    "maxLength": 9,
+                    "regexPattern": "^\\d{1,9}$",
+                    "description": "Passport numbers must be between 1 and 9 digits long. Example: '123456789'."
+                }
+            ]
+        }
+    ]
+}

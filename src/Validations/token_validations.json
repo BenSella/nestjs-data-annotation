@@ -1,0 +1,51 @@
+{
+    "validationGroups": [
+        {
+            "group": "Token",
+            "subgroups": [
+                {
+                    "name": "TokenRsa256",
+                    "minLength": 342,
+                    "maxLength": 342,
+                    "regexPattern": "^[A-Za-z0-9+/=]{342}$",
+                    "description": "RSA 256 public key token, base64 encoded. Example: 'MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A...'."
+                },
+                {
+                    "name": "TokenAes",
+                    "minLength": 16,
+                    "maxLength": 256,
+                    "regexPattern": "^[A-Za-z0-9+/=]{16,}$",
+                    "description": "AES encryption key, typically base64 encoded. Example: 'VGhpcyBpcyBhIHRlc3QgdG9rZW4='."
+                },
+                {
+                    "name": "TokenMd5",
+                    "minLength": 32,
+                    "maxLength": 32,
+                    "regexPattern": "^[a-f0-9]{32}$",
+                    "description": "MD5 hash token, typically 32 hexadecimal digits. Example: '5d41402abc4b2a76b9719d911017c592'."
+                },
+                {
+                    "name": "TokenSha256",
+                    "minLength": 64,
+                    "maxLength": 64,
+                    "regexPattern": "^[a-f0-9]{64}$",
+                    "description": "SHA-256 hash. Example: 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855'."
+                },
+                {
+                    "name": "TokenJwt",
+                    "minLength": 10,
+                    "maxLength": 4096,
+                    "regexPattern": "^[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]+\\.[A-Za-z0-9-_]*$",
+                    "description": "Compact URL-safe means of representing claims exchanged between parties. Example: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'."
+                },
+                {
+                    "name": "TokenBase64",
+                    "minLength": 1,
+                    "maxLength": 4096,
+                    "regexPattern": "^[A-Za-z0-9+/=]*$",
+                    "description": "Encodes data using Base64 scheme. Example: 'VGhpcyBpcyBhIHRlc3QgdG9rZW4='."
+                }
+            ]
+        }
+    ]
+}

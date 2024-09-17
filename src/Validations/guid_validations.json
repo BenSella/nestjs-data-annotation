@@ -1,0 +1,44 @@
+{
+    "validationGroups": [
+        {
+            "group": "Guid",
+            "subgroups": [
+                {
+                    "name": "GuidStandard",
+                    "minLength": 36,
+                    "maxLength": 36,
+                    "regexPattern": "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$",
+                    "description": "Standard GUID with hyphens. Example: '550e8400-e29b-41d4-a716-446655440000'."
+                },
+                {
+                    "name": "GuidSimple",
+                    "minLength": 32,
+                    "maxLength": 32,
+                    "regexPattern": "^[0-9a-fA-F]{32}$",
+                    "description": "GUID without hyphens. Example: '550e8400e29b41d4a716446655440000'."
+                },
+                {
+                    "name": "GuidBase64",
+                    "minLength": 24,
+                    "maxLength": 24,
+                    "regexPattern": "^[A-Za-z0-9+/?=]{24}$",
+                    "description": "Base64 encoded GUID. Example: 'VGhpcyBpcyBhIHRlc3Q='."
+                },
+                {
+                    "name": "GuidBraced",
+                    "minLength": 38,
+                    "maxLength": 38,
+                    "regexPattern": "^{[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}}$",
+                    "description": "GUID enclosed in braces. Example: '{550e8400-e29b-41d4-a716-446655440000}'."
+                },
+                {
+                    "name": "GuidUrlSafe",
+                    "minLength": 24,
+                    "maxLength": 24,
+                    "regexPattern": "^[A-Za-z0-9-_==?]{24}$",
+                    "description": "Base64 encoded GUID that is safe for URLs. Example: 'VGhpcyBpcyBhIHRlc3Q=='."
+                }
+            ]
+        }
+    ]
+}

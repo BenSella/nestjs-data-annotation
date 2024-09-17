@@ -1,0 +1,124 @@
+{
+    "validationGroups": [
+        {
+            "group": "StringHeb",
+            "subgroups": [
+                {
+                    "name": "Hebrew0_20",
+                    "minLength": 0,
+                    "maxLength": 20,
+                    "regexPattern": "^[א-ת '\"\\-\\(\\)*%\\/@,?!.]*$",
+                    "description": "Short Hebrew strings with special characters. Example: 'שלום וברכה'."
+                },
+                {
+                    "name": "Hebrew0_60",
+                    "minLength": 0,
+                    "maxLength": 60,
+                    "regexPattern": "^[א-ת '\"\\-\\(\\)*%\\/@,?!.]*$",
+                    "description": "Medium-length Hebrew text with basic punctuation. Example: 'שלום וברכה לכל הקוראים'."
+                },
+                {
+                    "name": "Hebrew0_100",
+                    "minLength": 0,
+                    "maxLength": 100,
+                    "regexPattern": "^[א-ת '\"\\-\\(\\)*%\\/@,?!.]*$",
+                    "description": "Extended Hebrew text for full names. Example: 'שלום וברכה לכל הקוראים היקרים'."
+                },
+                {
+                    "name": "Hebrew0_5000",
+                    "minLength": 0,
+                    "maxLength": 5000,
+                    "regexPattern": "^[א-ת '\"\\-\\(\\)*%\\/@,?!.]*$",
+                    "description": "Long Hebrew texts for articles or extensive content. Example: ' מאמר ארוך בעברית שמכיל תווים רבים וגם תווים מיוחדים כמו: *%\\/@,?!.]*$'."
+                },
+                {
+                    "name": "ComplexHebrew5000",
+                    "minLength": 0,
+                    "maxLength": 5000,
+                    "regexPattern": "^[א-ת0-9.\\s\r\n\"@?!#$%^&*()_-]*$",
+                    "description": "Supports complex Hebrew texts including numeric and special characters. Example: 'טקסט מורכב עם מספרים 123 ו@#$%^&*()'."
+                }
+            ]
+        },
+        {
+            "group": "StringEng",
+            "subgroups": [
+                {
+                    "name": "English0_20",
+                    "minLength": 0,
+                    "maxLength": 20,
+                    "regexPattern": "^[a-zA-Z '\"\\-\\.\\(\\)*%\\/@,?!.]*$",
+                    "description": "Short English strings, including basic punctuation. Example: 'Hello world'."
+                },
+                {
+                    "name": "English0_60",
+                    "minLength": 0,
+                    "maxLength": 60,
+                    "regexPattern": "^[a-zA-Z '\"\\-\\.\\(\\)*%\\/@,?!.]*$",
+                    "description": "Medium-length English text for brief descriptions. Example: 'This is a medium-length English description.'."
+                },
+                {
+                    "name": "English0_100",
+                    "minLength": 0,
+                    "maxLength": 100,
+                    "regexPattern": "^[a-zA-Z '\"\\-\\.\\(\\)*%\\/@,?!.]*$",
+                    "description": "Longer English text for full names with punctuation. Example: 'This is a longer English description for full names.'."
+                },
+                {
+                    "name": "English0_5000",
+                    "minLength": 0,
+                    "maxLength": 5000,
+                    "regexPattern": "^[a-zA-Z '\"\\-\\(\\)*%\\/@,?!.]*$",
+                    "description": "Extensive English texts for articles or detailed content. Example: 'This is a very long English text for articles or detailed content like:*%\\/@,?!.]*$...'."
+                },
+                {
+                    "name": "ComplexEnglish5000",
+                    "minLength": 0,
+                    "maxLength": 5000,
+                    "regexPattern": "^[a-zA-Z0-9.\\s\r\n\"@?!#$%^&*()_-]*$",
+                    "description": "Supports complex English texts including numeric and special characters. Example: 'Complex text with numbers 123 and @#$%^&*()'."
+                }
+            ]
+        },
+        {
+            "group": "StringMultiLang",
+            "subgroups": [
+                {
+                    "name": "Multilingual0_20",
+                    "minLength": 0,
+                    "maxLength": 20,
+                    "regexPattern": "^[א-תa-zA-Z '\"\\-\\.\\(\\)*%\\/@,?!.]*$",
+                    "description": "Short multilingual strings, accommodating basic punctuation. Example: 'שלום Hello'."
+                },
+                {
+                    "name": "Multilingual0_60",
+                    "minLength": 0,
+                    "maxLength": 60,
+                    "regexPattern": "^[א-תa-zA-Z '\"\\-\\.\\(\\)*%\\/@,?!.]*$",
+                    "description": "Medium-length text for descriptions in Hebrew or English. Example: 'שלום וברכה לכל הקוראים. Hello to all readers.'."
+                },
+                {
+                    "name": "Multilingual0_100",
+                    "minLength": 0,
+                    "maxLength": 100,
+                    "regexPattern": "^[א-תa-zA-Z '\"\\-\\.\\(\\)*%\\/@,?!.]*$",
+                    "description": "Extended multilingual text for full names with punctuation. Example: 'שלום וברכה לכל האנשים היקרים. Hello to all dear people.'."
+                },
+                {
+                    "name": "Multilingual0_5000",
+                    "minLength": 0,
+                    "maxLength": 5000,
+                    "regexPattern": "^[א-תa-zA-Z0-9.\\s\r\n\"@,?!#$%^&*()_-]*$",
+                    "description": "Extensive texts for articles or detailed content in Hebrew or English. Example: 'like:@,?!#$%^&*()_-]*$ מאמר ארוך בעברית ואנגלית שמכיל תווים רבים ומיוחדים...'."
+                },
+                {
+                    "name": "ComplexMultilingual",
+                    "minLength": 0,
+                    "maxLength": 5000,
+                    "regexPattern": "^[א-תa-zA-Z0-9.\\s\r\n\"@,?!#$%^&*()_-]*$",
+                    "description": "Supports complex multilingual texts including various special characters. Example: ' like:@#$%^&*() שלום Hello 123'."
+                }
+            ]
+        }
+    ]
+}

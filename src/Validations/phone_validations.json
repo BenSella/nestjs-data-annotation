@@ -1,0 +1,23 @@
+{
+    "validationGroups": [
+        {
+            "group": "Phone",
+            "subgroups": [
+                {
+                    "name": "PhoneInternational",
+                    "minLength": 9,
+                    "maxLength": 16,
+                    "regexPattern": "^\\+[1-9]\\d{1,14}$",
+                    "description": "International phone number format. Example: '+12345678901'."
+                },
+                {
+                    "name": "PhoneDigitsOnly",
+                    "minLength": 7,
+                    "maxLength": 15,
+                    "regexPattern": "^\\d+$",
+                    "description": "Pure numeric format, suitable for data analysis and system processing. Example: '1234567890'."
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "validationGroups": [
+        {
+            "group": "Numeric",
+            "subgroups": [
+                {
+                    "name": "Int",
+                    "minValue": -2147483648,
+                    "maxValue": 2147483647,
+                    "regexPattern": "^(?:[1-9]\\d{0,9}|4[01]\\d{8}|42[0-8]\\d{7}|429[0-3]\\d{6}|4294[0-8]\\d{5}|42949[0-5]\\d{4}|429496[0-6]\\d{3}|4294967[0-1]\\d{2}|42949672[0-8]\\d|429496729[0-5])$",
+                    "description": "Integer values. Example: 123456."
+                },
+                {
+                    "name": "Uint",
+                    "minValue": 0,
+                    "maxValue": 4294967295,
+                    "regexPattern": "^(?:[1-9]\\d{0,9}|4[01]\\d{8}|42[0-8]\\d{7}|429[0-3]\\d{6}|4294[0-8]\\d{5}|42949[0-5]\\d{4}|429496[0-6]\\d{3}|4294967[0-1]\\d{2}|42949672[0-8]\\d|429496729[0-5])$",
+                    "description": "Unsigned integer values. Example: 123456."
+                },
+                {
+                    "name": "SmallInt",
+                    "minValue": -32768,
+                    "maxValue": 32767,
+                    "regexPattern": "^-?(?:[1-9]\\d{0,3}|[1-2]\\d{4}|3[0-2][0-6][0-7][0-5]?)$",
+                    "description": "Small integer values. Example: 12345."
+                },
+                {
+                    "name": "BigInt",
+                    "minValue": -9223372036854770000,
+                    "maxValue": 9223372036854770000,
+                    "regexPattern": "^-?(?:[1-9]\\d{0,17}|[1-8]\\d{18}|9[01]\\d{17}|92[01]\\d{16}|922[01]\\d{15}|9223[01]\\d{14}|92233[01]\\d{13}|922337[01]\\d{12}|9223372[01]\\d{11}|92233720[01]\\d{10}|922337203[01]\\d{9}|9223372036[01]\\d{8}|92233720367[01]\\d{7}|922337203685[01]\\d{6}|9223372036854[01]\\d{5}|92233720368547[01]\\d{4}|922337203685477[01]\\d{3}|9223372036854775[01]\\d{2}|92233720368547757[01]\\d|922337203685477580[0-7])$",
+                    "description": "Large integer values. Example: 1234567890123456789."
+                },
+                {
+                    "name": "Float",
+                    "minValue": -3.4e+38,
+                    "maxValue": 3.4e+38,
+                    "regexPattern": "^-?\\d+(\\.\\d+)?([eE][+-]?\\d+)?$",
+                    "description": "Floating point values. Example: 123.456."
+                },
+                {
+                    "name": "Double",
+                    "minValue": -1.7e+308,
+                    "maxValue": 1.7e+308,
+                    "regexPattern": "^-?\\d+(\\.\\d+)?([eE][+-]?\\d+)?$",
+                    "description": "Double precision floating point values. Example: 123.45678901234567."
+                },
+                {
+                    "name": "Decimal",
+                    "minValue": "Up to 28-29 significant figures",
+                    "maxValue": "Up to 28-29 significant figures",
+                    "regexPattern": "^-?\\d+(\\.\\d+)?$",
+                    "description": "Decimal values. Example: 123.456789."
+                },
+                {
+                    "name": "Percentage",
+                    "minValue": 0,
+                    "maxValue": 100,
+                    "regexPattern": "^(100\\.00?%?|\\d{1,2}(\\.\\d{1,2})?%?)$",
+                    "description": "Percentage values. Example: 99.99%."
+                }
+            ]
+        }
+    ]
+}
