@@ -21,27 +21,6 @@ This project is intended to streamline the validation process by providing reusa
 and configurable validation tools, making it easier to enforce data integrity and 
 consistency across NestJS applications.
 
-Project Architecture:
-"
-├── libs/annotation                           
-│   ├── annotation.module.js
-│   ├── annotation.service.js
-│   ├── custom-validators.js
-│   ├── dynamic-validation.service.js
-│   ├── index.js
-│   ├── validated-api-property.decorator.js
-│   ├── validation.service.js
-│   └── Validations/
-│   └── ReadMe.md     
-│       ├── emails.json
-│       ├── guid_validations.json
-│       ├── identity_documents_validations.json
-│       ├── numeric_validations.json
-│       ├── phone_validations.json
-│       ├── string_validations.json
-│       └── token_validations.json
-"
-
 
 How to use the package on other project 
 example:
@@ -150,4 +129,25 @@ import { NestjsDataAnnotationsModule } from 'validation-attributes-ts';
   providers: [],
 })
 export class AppModule {}
+"
+```bash
+Project Architecture:
+"
+├── libs/annotation                           
+│   ├── annotation.module.js
+│   ├── annotation.service.js
+│   ├── custom-validators.js
+│   ├── dynamic-validation.service.js
+│   ├── index.js
+│   ├── validated-api-property.decorator.js
+│   ├── validation.service.js
+│   └── Validations/
+│   └── ReadMe.md     
+│       ├── emails.json
+│       ├── guid_validations.json
+│       ├── identity_documents_validations.json
+│       ├── numeric_validations.json
+│       ├── phone_validations.json
+│       ├── string_validations.json
+│       └── token_validations.json
 "
