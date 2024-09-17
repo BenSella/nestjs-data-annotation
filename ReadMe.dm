@@ -1,4 +1,5 @@
-The "validation-attributes-ts" project is a NestJS-based library designed to 
+#"validation-attributes-ts" project 
+a NestJS-based library designed to 
 provide dynamic validation functionalities using decorators and custom validation 
 logic. It includes a set of validation rules defined in JSON files and provides 
 services and decorators that can be applied to DTOs to enforce these rules. 
@@ -21,8 +22,27 @@ This project is intended to streamline the validation process by providing reusa
 and configurable validation tools, making it easier to enforce data integrity and 
 consistency across NestJS applications.
 
+Project Architecture:
+"
+├── libs/annotation                           
+│   ├── annotation.module.js
+│   ├── annotation.service.js
+│   ├── custom-validators.js
+│   ├── dynamic-validation.service.js
+│   ├── index.js
+│   ├── validated-api-property.decorator.js
+│   ├── validation.service.js
+│   └── Validations/
+│   └── ReadMe.md     
+│       ├── emails.json
+│       ├── guid_validations.json
+│       ├── identity_documents_validations.json
+│       ├── numeric_validations.json
+│       ├── phone_validations.json
+│       ├── string_validations.json
+│       └── token_validations.json
 
-How to use the package on other project 
+#How to use the package on other project 
 example:
 root\main.ts:
 "
@@ -129,25 +149,4 @@ import { NestjsDataAnnotationsModule } from 'validation-attributes-ts';
   providers: [],
 })
 export class AppModule {}
-"
-
-Project Architecture:
-"
-├── libs/annotation                           
-│   ├── annotation.module.js
-│   ├── annotation.service.js
-│   ├── custom-validators.js
-│   ├── dynamic-validation.service.js
-│   ├── index.js
-│   ├── validated-api-property.decorator.js
-│   ├── validation.service.js
-│   └── Validations/
-│   └── ReadMe.md     
-│       ├── emails.json
-│       ├── guid_validations.json
-│       ├── identity_documents_validations.json
-│       ├── numeric_validations.json
-│       ├── phone_validations.json
-│       ├── string_validations.json
-│       └── token_validations.json
 "
