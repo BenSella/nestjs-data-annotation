@@ -130,7 +130,7 @@ import { NestjsDataAnnotationsModule } from 'validation-attributes-ts';
 })
 export class AppModule {}
 "
-```bash
+
 Project Architecture:
 "
 ├── libs/annotation                           
